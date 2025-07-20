@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Classifier</title>
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+        @keyframes backgroundAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Plant Disease Classifier</h1>
+        <form action="/" method="post" enctype="multipart/form-data">
+            <label for="model_type">Choose Model:</label>
+            <select name="model_type" id="model_type">
+                <option value="fruit_vegetable">Fruit & Vegetable</option>
+                <option value="tomato_potato_pepper">Tomato, Potato & Pepper</option>
+            </select>
+            <br><br>
+            <input type="file" name="file" id="file" class="i1">
+            <br><br>
+            <button type="submit" class="i2">Upload and Classify</button>
+        </form>
+    </div>
+</body>
+</html>
