@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(34,139,34,1) 30%, rgba(107,142,35,1) 70%);
+    z-index: 1;
+    animation: moveTop 2s 11s forwards;    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 600px;
+}
+
+.box {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 100%;
+    max-width: 250px;
+    text-decoration: none; /* إزالة التسطير من الروابط */
+    color: inherit; /* المحافظة على لون النص داخل الروابط */
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+}
+
+.box h2 {
+    padding: 10px;
+    margin: 0;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
